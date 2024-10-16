@@ -1,0 +1,19 @@
+[GLOBAL]
+backend_packages = [
+    "pants.backend.experimental.java",
+    "pants.backend.experimental.scala",
+]
+pants_version = "2.22.0"
+print_stacktrace = true
+
+[jvm.resolves]
+jvm-default = "3rdparty/jvm/jvm.lock"
+
+[scala.version_for_resolve]
+jvm-default = "2.13.12"
+
+[experimental-bsp]
+groups_config_files = [
+    "jvm/bsp-groups.toml",
+    "jvm2/bsp-groups.toml",
+]

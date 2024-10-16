@@ -1,0 +1,5 @@
+[groups.jvm2]
+addresses = [
+  "jvm2/::",
+]
+base_directory = "jvm2"
